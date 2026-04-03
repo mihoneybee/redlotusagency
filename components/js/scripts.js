@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const headerPlaceholder = document.getElementById('header-placeholder');
             if (headerPlaceholder) {
-                const headerRes = await fetch('components/header.html');
+                const headerRes = await fetch('/components/header.html');
                 if (headerRes.ok) {
                     headerPlaceholder.innerHTML = await headerRes.text();
                 }
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const footerPlaceholder = document.getElementById('footer-placeholder');
             if (footerPlaceholder) {
-                const footerRes = await fetch('components/footer.html');
+                const footerRes = await fetch('/components/footer.html');
                 if (footerRes.ok) {
                     footerPlaceholder.innerHTML = await footerRes.text();
                 }
