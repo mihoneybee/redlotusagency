@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storymaker | RedLótus Agency</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="../assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../components/css/styles.css">
+    
+    <style>
+        .service-page {
+            padding-top: 150px;
+            padding-bottom: 50px;
+            background-color: var(--dark-bg);
+            color: var(--white);
+        }
+
+        .service-hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .service-intro-box {
+            text-align: left;
+            max-width: 450px;
+            margin: 0 auto 3rem auto;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .service-intro-box p {
+            margin-bottom: 20px;
+        }
+
+        .service-intro-box .underline-text {
+            color: var(--white);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .main-video-container {
+            max-width: 260px;
+            width: 100%;
+            margin: 0 auto 40px auto;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+            aspect-ratio: 9 / 16;
+            background-color: #333;
+        }
+
+        .main-video-container video, .main-video-container div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .includes-title {
+            text-align: center;
+            font-size: 1.2rem;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            margin-bottom: 20px;
+        }
+
+        .includes-list {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        .includes-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .includes-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--white);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .cta-button-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .btn-red-rounded {
+            display: inline-block;
+            background-color: var(--red-brand);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .btn-red-rounded:hover {
+            background-color: var(--red-brand-light);
+            transform: translateY(-3px);
+        }
+
+        /* Portfolio Section */
+        .portfolio-section-white {
+            background-color: var(--white);
+            color: var(--dark-bg);
+            padding: 80px 0;
+        }
+
+        .portfolio-title-red {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--red-brand);
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        .portfolio-category-title-grey {
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 40px 0 30px 0;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            color: #666666;
+            font-weight: 700;
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .video-item {
+            position: relative;
+            aspect-ratio: 9 / 16;
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .video-item video, .video-item img, .video-item div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .video-item:hover video, .video-item:hover img, .video-item:hover div {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 900px) {
+            .service-hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <section class="service-page reveal-card">
+        <div class="container">
+            <h1 class="service-hero-title">Storymaker</h1>
+            
+            <div class="service-intro-box reveal-text delay-1">
+                <p><span class="underline-text">Conte a história do seu evento com a emoção que ele merece.</span></p>
+                <p>Direção, captação e edição de stories profissionais que envolvem e engajam.</p>
+                <p>Ideal para: eventos, palestras, casamentos, confraternizações e shows.</p>
+            </div>
+
+            <div class="main-video-container reveal-card delay-2">
+                <!-- Placeholder for the main featured story video -->
+                <div class="bg-work-1">
+                    <div class="play-btn"><i class="fas fa-play"></i></div>
+                </div>
+            </div>
+
+            <div class="reveal-card delay-3">
+                <h3 class="includes-title">O serviço inclui:</h3>
+                <ul class="includes-list">
+                    <li>Briefing personalizado (formulário);</li>
+                    <li>Cronograma estratégico de stories e legendas;</li>
+                    <li>Captação de imagem, som e direção de cena;</li>
+                    <li>Edição com trilha, transições e legendas;</li>
+                    <li>Postagem em tempo real;</li>
+                    <li>Entrega de materiais brutos e editados via Drive.</li>
+                </ul>
+            </div>
+
+            <div class="cta-button-container reveal-card delay-4">
+                <a href="https://wa.me/5594981492099?text=Olá! Gostaria de fazer um orçamento para Storymaker." target="_blank" class="btn-red-rounded">Fazer orçamento</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section-white">
+        <div class="container">
+            <h2 class="portfolio-title-red reveal-text">Portfólio de<br>edição de vídeos</h2>
+            
+            <!-- Reinauguração -->
+            <h3 class="portfolio-category-title-grey reveal-card">Reinauguração<br>e coffeebreak</h3>
+            <div class="videos-grid reveal-card delay-1">
+                <div class="video-item bg-work-2"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-3"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-4"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+            </div>
+
+            <!-- Making-off -->
+            <h3 class="portfolio-category-title-grey reveal-card" style="margin-top: 60px;">Making-off<br>formanda</h3>
+            <div class="videos-grid reveal-card delay-1">
+                <div class="video-item bg-work-5"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-6"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-7"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+            </div>
+
+            <!-- Colação de grau -->
+            <h3 class="portfolio-category-title-grey reveal-card" style="margin-top: 60px;">Colação de grau</h3>
+            <div class="videos-grid reveal-card delay-1" style="margin-bottom: 40px;">
+                <div class="video-item bg-work-8"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-9"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-10"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;" class="reveal-card">
+                <p style="color: #666666; font-size: 0.95rem; margin-bottom: 15px;">Quero registrar cada momento<br>importante do meu evento!</p>
+                <a href="../index.html#servicos" class="btn-red-rounded">Fazer orçamento</a>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="../index.html#servicos" style="color: var(--dark-bg); text-decoration: underline; text-underline-offset: 3px; font-size: 1.1rem; font-weight: 500;"><i class="fas fa-arrow-left"></i> Voltar para todos os serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5594981492099" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="../components/js/scripts.js"></script>
+</body>
+</html>

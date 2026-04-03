@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição de Vídeos | RedLótus Agency</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="../assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../components/css/styles.css">
+    
+    <style>
+        .service-page {
+            padding-top: 150px;
+            padding-bottom: 50px;
+            background-color: var(--dark-bg);
+            color: var(--white);
+        }
+
+        .service-hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .service-intro-box {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 3rem auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Benefits Box */
+        .benefits-box {
+            background-color: var(--red-brand);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 0 auto 4rem auto;
+            max-width: 600px;
+        }
+
+        .benefits-box h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefits-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .benefits-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--white);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        /* Includes Box */
+        .includes-title {
+            text-align: center;
+            font-size: 1.2rem;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            margin-bottom: 20px;
+        }
+
+        .includes-list {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        .includes-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .includes-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--white);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        /* Bottom CTA */
+        .cta-bottom-section {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .cta-bottom-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        .btn-red-rounded {
+            display: inline-block;
+            background-color: var(--red-brand);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .btn-red-rounded:hover {
+            background-color: var(--red-brand-light);
+            transform: translateY(-3px);
+        }
+
+        /* Portfolio Section */
+        .portfolio-section {
+            background-color: #999999; /* Light Grey background */
+            padding: 80px 0;
+        }
+
+        .portfolio-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 50px;
+            color: var(--dark-bg);
+            line-height: 1.2;
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .video-item {
+            position: relative;
+            aspect-ratio: 9 / 16;
+            background-color: #333;
+            border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .video-item video, .video-item img, .video-item div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .video-item:hover video, .video-item:hover img, .video-item:hover div {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 900px) {
+            .service-hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <section class="service-page reveal-card">
+        <div class="container">
+            <h1 class="service-hero-title">Edição de Vídeos</h1>
+            
+            <div class="service-intro-box reveal-text delay-1">
+                Transforme suas gravações em vídeos impactantes e prontos para as redes!<br><br>
+                Edição criativa e personalizada para reels, anúncios, ou vídeos institucionais, tudo com qualidade e agilidade.
+            </div>
+
+            <div class="benefits-box reveal-card delay-2">
+                <h3>Benefícios que importam</h3>
+                <ul class="benefits-list">
+                    <li><strong>Valorização da sua imagem</strong> — vídeos que comunicam profissionalismo e autoridade.</li>
+                    <li><strong>Agilidade e praticidade</strong> — envie o material bruto e receba o vídeo final pronto para postar.</li>
+                    <li><strong>Mais engajamento e resultados</strong> — edições que prendem a atenção e conectam com seu público.</li>
+                </ul>
+            </div>
+
+            <div class="reveal-card delay-3">
+                <h3 class="includes-title">O serviço inclui:</h3>
+                <ul class="includes-list">
+                    <li>Corte e montagem profissional com ritmo dinâmico;</li>
+                    <li>Tratamento de cor e ajuste de áudio;</li>
+                    <li>Inserção de legendas, trilha sonora e efeitos visuais;</li>
+                    <li>Animações leves, transições e elementos gráficos;</li>
+                    <li>Adaptação de formato (Reels, Stories, YouTube, Anúncios);</li>
+                    <li>Entrega em alta qualidade e pronta para publicar.</li>
+                </ul>
+            </div>
+
+            <div class="cta-bottom-section reveal-card delay-4">
+                <h3>Pronto(a) para transformar<br>suas ideias em vídeos incríveis?</h3>
+                <a href="https://wa.me/5594981492099?text=Olá! Gostaria de fazer um orçamento para Edição de Vídeos." target="_blank" class="btn-red-rounded">Fazer orçamento</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="portfolio-title reveal-text">Portfólio de<br>edição de vídeos</h2>
+            
+            <div class="videos-grid reveal-card delay-1" style="margin-bottom: 40px;">
+                <div class="video-item bg-work-6"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-7"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-8"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="../index.html#servicos" class="btn-red-rounded">Fazer orçamento</a>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="../index.html#servicos" style="color: var(--dark-bg); text-decoration: underline; text-underline-offset: 3px; font-size: 1.1rem; font-weight: 500;"><i class="fas fa-arrow-left"></i> Voltar para todos os serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5594981492099" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="../components/js/scripts.js"></script>
+</body>
+</html>

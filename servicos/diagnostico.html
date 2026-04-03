@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Perfil | RedLótus Agency</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="../assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../components/css/styles.css">
+    
+    <style>
+        .service-page {
+            padding-top: 150px;
+            padding-bottom: 100px;
+            background-color: var(--dark-bg);
+            color: var(--white);
+            min-height: 100vh;
+        }
+        
+        .service-hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .service-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+        }
+
+        .service-intro strong {
+            color: var(--white);
+            display: block;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .service-content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .service-box-red {
+            background-color: var(--red-brand);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(194, 10, 39, 0.3);
+        }
+
+        .service-box-red h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+            padding-bottom: 15px;
+        }
+
+        .service-includes-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+
+        .service-includes-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .service-includes-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--white);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .service-price {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .service-model-section {
+            text-align: center;
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .service-model-section h4 {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            color: var(--text-muted);
+        }
+
+        .model-image-placeholder {
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        .model-image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .service-cta-section {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .service-cta-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 900px) {
+            .service-content-grid {
+                grid-template-columns: 1fr;
+            }
+            .service-hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <section class="service-page reveal-card">
+        <div class="container">
+            <h1 class="service-hero-title">Diagnóstico de perfil</h1>
+            
+            <div class="service-intro reveal-text delay-1">
+                <strong>O primeiro passo para transformar seu perfil em uma vitrine estratégica.</strong>
+                Receba um plano de ação personalizado com ajustes e estratégias prontas para aplicar.
+            </div>
+
+            <div class="service-content-grid">
+                <!-- Left Column: Includes & Price -->
+                <div class="service-box-red reveal-card delay-2">
+                    <h3>O serviço inclui:</h3>
+                    <ul class="service-includes-list">
+                        <li>Estudo de mercado e imersão na marca;</li>
+                        <li>Análise do perfil (foto, bio, destaques, @ e nome);</li>
+                        <li>Avaliação de conteúdo, estética e consistência;</li>
+                        <li>Definição de persona e posicionamento;</li>
+                        <li>Consultoria de conteúdo e estratégias práticas;</li>
+                        <li>Guia em PDF com orientações;</li>
+                        <li>Suporte de 15 dias para dúvidas.</li>
+                    </ul>
+                    <div class="service-price">
+                        Por: R$ 80,00
+                    </div>
+                </div>
+
+                <!-- Right Column: Document Model -->
+                <div class="service-model-section reveal-card delay-3">
+                    <h4>Modelo do documento<br>que será disponibilizado:</h4>
+                    <div class="model-image-placeholder">
+                        <img src="../assets/images/servicos/moddiag.png" alt="Modelo do documento de Diagnóstico de Perfil">
+                    </div>
+                </div>
+            </div>
+            <div class="service-cta-section reveal-card delay-4" style="margin-bottom: 30px;">
+                <h3>Transforme seu perfil em uma máquina<br>de gerar conexões e oportunidades!</h3>
+                <a href="https://wa.me/5594981492099?text=Olá! Gostaria de solicitar um Diagnóstico de Perfil." target="_blank" class="btn-primary-underline">Quero meu diagnóstico</a>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="../index.html#servicos" style="color: var(--text-muted); text-decoration: underline; text-underline-offset: 3px; font-size: 1.1rem;"><i class="fas fa-arrow-left"></i> Voltar para todos os serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5594981492099" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="../components/js/scripts.js"></script>
+</body>
+</html>

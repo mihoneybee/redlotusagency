@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Mídias Sociais | RedLótus Agency</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="../assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../components/css/styles.css">
+    
+    <style>
+        .service-page {
+            padding-top: 150px;
+            padding-bottom: 100px;
+            background-color: var(--dark-bg);
+            color: var(--white);
+            min-height: 100vh;
+        }
+
+        .service-hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .service-intro-box {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .service-intro-box strong {
+            color: var(--white);
+            display: block;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        /* Benefits Box */
+        .benefits-box {
+            background-color: var(--red-brand);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 0 auto 4rem auto;
+            max-width: 800px;
+        }
+
+        .benefits-box h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefits-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .benefits-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--white);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        /* How It Works */
+        .how-it-works-section {
+            max-width: 800px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .how-it-works-section h3 {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+        }
+
+        .how-it-works-list {
+            list-style: none;
+            padding: 0;
+            counter-reset: custom-counter;
+        }
+
+        .how-it-works-list li {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .how-it-works-list li::before {
+            counter-increment: custom-counter;
+            content: counter(custom-counter) ".";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Planos */
+        .planos-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .planos-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .plan-boxes-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .plan-box {
+            background-color: #333333;
+            border-radius: 30px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .plan-box h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .plan-box p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .plan-box.premium {
+            background-color: var(--red-brand);
+        }
+
+        .planos-obs {
+            margin-top: 30px;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .cta-button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-red-rounded {
+            display: inline-block;
+            background-color: var(--red-brand);
+            color: var(--white);
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .btn-red-rounded:hover {
+            background-color: var(--red-brand-light);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 900px) {
+            .service-hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <section class="service-page reveal-card">
+        <div class="container">
+            <h1 class="service-hero-title">Gerenciamento<br>de Mídias Sociais</h1>
+            
+            <div class="service-intro-box reveal-text delay-1">
+                <strong>Estratégia, consistência e posicionamento em um só serviço.</strong>
+                Você é expert no seu serviço ou negócio. Nós somos especialistas em transformar conhecimento em autoridade online.
+            </div>
+
+            <div class="benefits-box reveal-card delay-2">
+                <h3>Benefícios que importam</h3>
+                <ul class="benefits-list">
+                    <li><strong>Mais clientes reais</strong> — conteúdo pensado para atrair quem tem intenção de comprar.</li>
+                    <li><strong>Tempo livre pra você</strong> — gerenciamos rede, criação e estratégia enquanto você faz o que sabe.</li>
+                    <li><strong>Retorno mensurável</strong> — relatórios claros, metas e números que mostram crescimento.</li>
+                </ul>
+            </div>
+
+            <div class="how-it-works-section reveal-card delay-3">
+                <h3>Como funciona?</h3>
+                <ul class="how-it-works-list">
+                    <li><strong>1. Diagnóstico rápido</strong> — entendemos seu público, concorrência e oportunidades.</li>
+                    <li><strong>2. Plano personalizado</strong> — definimos formato, calendário e anúncios com foco em conversão.</li>
+                    <li><strong>3. Execução & otimização</strong> — criamos, publicamos e ajustamos com base em resultados reais.</li>
+                </ul>
+            </div>
+
+            <div class="planos-section reveal-card delay-4">
+                <h3>Planos</h3>
+                
+                <div class="plan-boxes-container">
+                    <div class="plan-box">
+                        <h4>Start</h4>
+                        <p>• 3 posts/semana + 5 stories guiados, edição e design simples, legendas e relatório mensal.</p>
+                    </div>
+                    
+                    <div class="plan-box">
+                        <h4>Pro</h4>
+                        <p>• 5 posts/semana + 7 sequências de stories, edição, design, legendas e agendamento de postagens.</p>
+                    </div>
+                    
+                    <div class="plan-box premium">
+                        <h4>Premium</h4>
+                        <p>• 7 posts/semana + 7 sequências de stories, edição, design, legendas, tráfego pago e agendamento de postagens.</p>
+                    </div>
+                </div>
+
+                <div class="planos-obs">
+                    Para outras quantidades de postagens entrar em contato com o time comercial
+                </div>
+            </div>
+
+            <div class="cta-button-container reveal-card delay-5">
+                <a href="https://wa.me/5594981492099?text=Olá! Gostaria de falar sobre o Gerenciamento de Mídias Sociais." target="_blank" class="btn-red-rounded">Negociar agora</a>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="../index.html#servicos" style="color: var(--text-muted); text-decoration: underline; text-underline-offset: 3px; font-size: 1.1rem;"><i class="fas fa-arrow-left"></i> Voltar para todos os serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5594981492099" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="../components/js/scripts.js"></script>
+</body>
+</html>

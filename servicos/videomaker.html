@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videomaker | RedLótus Agency</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="../assets/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../components/css/styles.css">
+    
+    <style>
+        .service-page {
+            padding-top: 150px;
+            padding-bottom: 50px;
+            background-color: var(--dark-bg);
+            color: var(--white);
+        }
+
+        .service-hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .service-intro-box {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 3rem auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .includes-title {
+            text-align: center;
+            font-size: 1.2rem;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            margin-bottom: 20px;
+        }
+
+        .includes-list {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        .includes-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .includes-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--white);
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .cta-button-container {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .btn-red-rounded {
+            display: inline-block;
+            background-color: var(--red-brand);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .btn-red-rounded:hover {
+            background-color: var(--red-brand-light);
+            transform: translateY(-3px);
+        }
+
+        /* Portfolio Section */
+        .portfolio-section {
+            background-color: #666666; /* Grey background */
+            padding: 60px 0;
+        }
+
+        .portfolio-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--white);
+        }
+
+        .portfolio-category-title {
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 40px 0 20px 0;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            color: var(--white);
+        }
+
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .video-item {
+            position: relative;
+            aspect-ratio: 9 / 16;
+            background-color: #333;
+            border-radius: 10px;
+            cursor: pointer;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .video-item video, .video-item img, .video-item div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .video-item:hover video, .video-item:hover img, .video-item:hover div {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 900px) {
+            .service-hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <section class="service-page reveal-card">
+        <div class="container">
+            <h1 class="service-hero-title">Videomaker</h1>
+            
+            <div class="service-intro-box reveal-text delay-1">
+                Produção audiovisual para vídeos autênticos, envolventes e profissionais.
+            </div>
+
+            <div class="reveal-card delay-2">
+                <h3 class="includes-title">O serviço inclui:</h3>
+                <ul class="includes-list">
+                    <li>Briefing e roteiro personalizado;</li>
+                    <li>Captação de imagem e direção de cena;</li>
+                    <li>Edição com correção de cor, trilha e elementos gráficos;</li>
+                    <li>Entrega de arquivos brutos e editados.</li>
+                </ul>
+            </div>
+
+            <div class="cta-button-container reveal-card delay-3">
+                <a href="https://wa.me/5594981492099?text=Olá! Gostaria de fazer um orçamento para Videomaker." target="_blank" class="btn-red-rounded">Fazer orçamento</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section">
+        <div class="container">
+            <h2 class="portfolio-title reveal-text">Portfólio de captura<br>e edição de vídeos</h2>
+            
+            <!-- Eventos profissionais -->
+            <h3 class="portfolio-category-title reveal-card">Eventos profissionais</h3>
+            <div class="videos-grid reveal-card delay-1">
+                <!-- Vazio, aguardando vídeos da cliente, pode usar background gradient -->
+                <div class="video-item bg-work-2"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-6"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-7"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+            </div>
+
+            <!-- Eventos comemorativos -->
+            <h3 class="portfolio-category-title reveal-card" style="margin-top: 60px;">Eventos comemorativos</h3>
+            <div class="videos-grid reveal-card delay-1">
+                <div class="video-item bg-work-8"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-4"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-5"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+            </div>
+
+            <!-- Área da saúde -->
+            <h3 class="portfolio-category-title reveal-card" style="margin-top: 60px;">Área da saúde</h3>
+            <div class="videos-grid reveal-card delay-1">
+                <div class="video-item bg-work-9"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-10"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-3"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+            </div>
+            
+            <!-- Publicitários -->
+            <h3 class="portfolio-category-title reveal-card" style="margin-top: 60px;">Publicitários</h3>
+            <div class="videos-grid reveal-card delay-1" style="margin-bottom: 40px;">
+                <div class="video-item bg-work-1"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-2"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+                <div class="video-item bg-work-3"><div class="play-btn"><i class="fas fa-play"></i></div></div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="../index.html#servicos" style="color: var(--white); text-decoration: underline; text-underline-offset: 3px; font-size: 1.1rem;"><i class="fas fa-arrow-left"></i> Voltar para todos os serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5594981492099" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="../components/js/scripts.js"></script>
+</body>
+</html>
