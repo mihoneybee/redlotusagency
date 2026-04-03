@@ -994,6 +994,9 @@ h2 {
         flex-direction: column;
         text-align: center;
         gap: 40px;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .hero-content {
